@@ -1,0 +1,21 @@
+Place 2,3,West
+
+Move
+
+Left
+
+Move
+
+Move
+
+Move
+
+Move
+
+Report
+
+Place 23, 34, South
+
+Report
+
+Move

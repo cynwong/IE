@@ -1,0 +1,41 @@
+//bad input
+
+
+
+place 2  ,    2,   e
+
+place 3,4,e
+
+report
+
+move
+
+right
+
+move
+
+move
+
+report
+
+place 2.2,2,e
+
+place -1,3,e
+
+place 2,4,other
+
+place 2,3,west
+
+move
+
+left
+
+move
+
+move
+
+move
+
+report
+
+bye
