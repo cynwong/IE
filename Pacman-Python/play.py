@@ -35,6 +35,8 @@ directions = {'n':"North",'e':"East",'s':"South",'w':"West"}
 boardsize = {"x":5,"y":5}
 '''pacman default position'''
 position = {"x":0,"y":0,"f":'n'}
+'''list of availabe commands'''
+commandList = 'place','move','left','right','report','read','bye','help'
 
 '''
     This funciton will rotate PacMan anti-clockwise
@@ -194,8 +196,8 @@ def read(command,isFirstMove):
         for line in data:
             line = line.strip()
             if line and line[:2] != '//':
-                print line.upper()
                 isFirstMove = action(line.lower(),isFirstMove)
+                print line.upper()
         f.close()
     else:
         printError(1.2,"Input file not found.")
@@ -204,6 +206,12 @@ def read(command,isFirstMove):
     Main function where we direct the progam what to do. 
 '''
 def action(command,isFirstMove):
+    
+    if not command in commandList:
+        printError(2.1,"Invalid Command")
+        print_help('list')
+        return isFirstMove
+    
     if command == 'bye':
         end()
 
@@ -226,10 +234,7 @@ def action(command,isFirstMove):
         report()    
     elif command[0:5] == 'place':
         place(command)
-    else:
-        printError(2.1,"Invalid Command")
-        print_help('list')
-        
+    
     return isFirstMove
 
 
