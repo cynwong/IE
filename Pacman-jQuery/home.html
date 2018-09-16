@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Play PacMan</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="handler.js"></script>
+	</head>
+	<body>
+		<div id='header'><h1>PacMan</h1></div>
+		<div id='content'>
+			<div id='controller_container'>
+				<input type='submit' id='btnLeft' value='Left'/>
+				<input type='submit' id='btnRight' value='Right'/>
+				<input type='submit' id='btnMove' value='Move'/>
+				<input type='submit' id='btnReport' value='Report'/>
+				<div id='frmPlace'>
+					X: <select id="x"></select>  
+					Y:  <select id="y"></select>   
+					Face: <select id="f">
+							  <option value="North">North</option>
+							  <option value="East">East</option>
+							  <option value="South">South</option>
+							  <option value="West">West</option>
+							</select>
+				     <input type='submit' id='btnPlace' value='Place'/>
+				</div>
+			</div>
+			<div id="board"></div>
+		</div>
+	</body>
+</html>
