@@ -8,7 +8,7 @@ PACMAN handler
 
 15-Sep-2018
 
-This program is created  in response to [Code-Challenge-1](https://github.com/ie/Code-Challenge-1).
+This program is created  in response to [Code-Challenge-1](https://github.com/ie/Code-Challenge-1). There is two programs written with Python and jQuery respectedly but they both act in same way. 
  
 This handler is to simulate Pacman moving in a grid (dimension 5x5) without any obstruction. This program only show the following commands/actions of user instructing Pacman
  * Requested functions:
